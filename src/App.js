@@ -10,9 +10,15 @@ import './styles.css';
 export default function App() {
   return (
     <CartProvider>
-      <Router>
+      {/* 
+        Use PUBLIC_URL as basename so that on GitHub Pages
+        (e.g. /react-ecommerce-store) your routes still resolve.
+      */}
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="app">
-          <header><h1>Simple React Store</h1></header>
+          <header>
+            <h1>Simple React Store</h1>
+          </header>
           <NavBar />
           <main>
             <Routes>
