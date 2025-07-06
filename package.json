@@ -2,7 +2,7 @@
   "name": "react-ecommerce-temp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Kevinrispoli.github.io/react-ecommerce-store",
+  "homepage": "https://Kevinrispoli.github.io/React-ecommerce-Store-Example",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
