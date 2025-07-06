@@ -1,0 +1,193 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  /* Gradient from light orange to red */
+  background: linear-gradient(135deg, #FFE5B4 0%, #FF4500 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 960px;
+  width: 100%;
+  text-align: center; /* center header and nav */
+}
+
+header h1 {
+  margin: 0 0 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar a.active {
+  color: #FF4500;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  gap: 1rem;
+}
+
+.card,
+.cart {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.cart {
+  width: 250px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-controls button {
+  margin-left: 0.5rem;
+}
+.checkout-page h2 {
+  margin-bottom: 1rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.checkout-form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.checkout-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.checkout-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #FF4500;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background: #e03e00;
+}
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Button base and hover */
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+button:hover {
+  background: #FF4500;
+  color: #fff;
+  border-color: #e03e00;
+}
+
+/* Responsive: stack main columns on narrow screens */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* Optional: adjust page padding */
+.app {
+  padding: 1.5rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Wrapper card width constrained */
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+}
+/* at the bottom of src/styles.css */
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;  /* keeps aspect‐ratio, but crops to fill */
+  border-radius: 4px; /* optional: round the corners a bit */
+}
