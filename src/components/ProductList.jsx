@@ -7,7 +7,8 @@ export default function ProductList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/products.json')
+   fetch(`${process.env.PUBLIC_URL}/products.json`)
+
       .then(res => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.json();
