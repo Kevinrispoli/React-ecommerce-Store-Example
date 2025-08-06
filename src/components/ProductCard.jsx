@@ -8,7 +8,7 @@ export default function ProductCard({ product }) {
   const base = process.env.NODE_ENV === 'production' 
     ? process.env.PUBLIC_URL 
     : '';
-  const imgSrc = `${base}${product.image}`;
+  const imgSrc = `${base}/${product.image}`;
 
   const handleAdd = () => {
     dispatch({ type: 'ADD_ITEM', product });
