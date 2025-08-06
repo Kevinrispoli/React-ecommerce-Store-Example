@@ -1,6 +1,3 @@
-// --------------------------------------------------
-
-// src/components/ProductCard.jsx
 import React from 'react';
 import { useCart } from '../context/CartContext';
 
