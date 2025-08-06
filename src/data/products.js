@@ -1,18 +1,12 @@
-import tshirtImg   from '../assets/images/tshirt.png';
-import jeansImg    from '../assets/images/jeans.png';
-import sneakersImg from '../assets/images/sneakers.png';
-import hatImg      from '../assets/images/hat.png';
-import jacketImg   from '../assets/images/jacket.png';
-import watchImg    from '../assets/images/watch.png';
-
-// Export an array of products referencing the imported images
+// Export an array of product objects pointing at your public/images folder
 const products = [
-  { id: 1, name: 'T-shirt',  price: 19.99, image: tshirtImg },
-  { id: 2, name: 'Jeans',    price: 49.99, image: jeansImg  },
-  { id: 3, name: 'Sneakers', price: 89.99, image: sneakersImg },
-  { id: 4, name: 'Hat',      price: 14.99, image: hatImg     },
-  { id: 5, name: 'Jacket',   price: 79.99, image: jacketImg  },
-  { id: 6, name: 'Watch',    price:129.99, image: watchImg   }
+  { id: 1, name: 'T-shirt',  price: 19.99, image: '/images/tshirt.png' },
+  { id: 2, name: 'Jeans',    price: 49.99, image: '/images/jeans.png' },
+  { id: 3, name: 'Sneakers', price: 89.99, image: '/images/sneakers.png' },
+  { id: 4, name: 'Hat',      price: 14.99, image: '/images/hat.png' },
+  { id: 5, name: 'Jacket',   price: 79.99, image: '/images/jacket.png' },
+  { id: 6, name: 'Watch',    price: 129.99, image: '/images/watch.png' }
 ];
 
 export default products;
+
