@@ -3,7 +3,6 @@ import { useCart } from '../context/CartContext';
 
 export default function ProductCard({ product }) {
   const { dispatch } = useCart();
-
   return (
     <div className="card">
       <img src={product.image} alt={product.name} />
