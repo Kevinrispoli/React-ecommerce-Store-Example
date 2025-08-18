@@ -1,9 +1,9 @@
-import tshirt   from '../assets/images/tshirt.png';
-import jeans    from '../assets/images/jeans.png';
-import sneakers from '../assets/images/sneakers.png';
-import hat      from '../assets/images/hat.png';
-import jacket   from '../assets/images/jacket.png';
-import watch    from '../assets/images/watch.png';
+import tshirt   from '.../public/images/tshirt.png';
+import jeans    from '.../public/images/jeans.png';
+import sneakers from '.../public/images/sneakers.png';
+import hat      from '.../public/images/hat.png';
+import jacket   from '.../public/images/jacket.png';
+import watch    from '.../public/images/watch.png';
 
 const products = [
   { id: 1, name: 'T-shirt',  price: 19.99, image: tshirt },
